@@ -6,15 +6,20 @@ namespace LABA5
 {
     class Gladiolus:flower
     {
-        public Gladiolus(string name, string color, double howmuch)
+        public Enum colors { get; set; }
+        public Gladiolus(string name, Enum color, double howmuch)
         {
             Name = name;
-            Color = color;
+            colors = color;
             HowMuch = howmuch;
         }
         public override void DoClone()
         {
             throw new NotImplementedException();
+        }
+        public override string ToString()
+        {
+            return "Flower: " + Name + "; Color: " + colors + "; HowMuch: " + HowMuch + "$";
         }
     }
 }

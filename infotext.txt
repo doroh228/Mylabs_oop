@@ -1,0 +1,2 @@
+Product = Банан, Value = 100, Mass = 100
+Product = Яблоко, Value = 150, Mass = 90
